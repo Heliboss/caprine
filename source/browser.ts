@@ -220,7 +220,6 @@ ipc.answerMain('archive-conversation', async () => {
 
 async function openHiddenPreferences(): Promise<boolean> {
 	if (!isPreferencesOpen()) {
-		document.documentElement.classList.add('hide-preferences-window');
 
 		await openPreferences();
 
