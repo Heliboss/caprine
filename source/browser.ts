@@ -221,8 +221,6 @@ ipc.answerMain('archive-conversation', async () => {
 async function openHiddenPreferences(): Promise<boolean> {
 	if (!isPreferencesOpen()) {
 
-		await openPreferences();
-
 		return true;
 	}
 
